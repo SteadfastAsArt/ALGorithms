@@ -9,7 +9,6 @@
  * Brute force: O(n*2^n)
  * DP: O(n^2) roughly
  * 
- * 
  */
 
 #include<bits/stdc++.h>
@@ -17,6 +16,7 @@ using namespace std;
 
 
 // L[i][j]: length of LSC(a[0..i-1], b[0..j-1])
+
 int LCS(string a, string b)
 {
     size_t m = a.length(), n = b.length();
@@ -33,5 +33,16 @@ int LCS(string a, string b)
         }
     }
 
+    return L[m][n];
+}
 
+
+int main(){
+    string a, b;
+    cin >> a >> b;
+    int ans = LCS(a, b);
+    
+    cout << ans << endl;
+    
+    return 0;
 }
