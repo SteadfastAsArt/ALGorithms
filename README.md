@@ -9,11 +9,14 @@ This encompasses several fundamental DS and relevant classical problems.
 + Tree
 + Graph
 
-## Special Methods and applications
+## Special Methods and Applications
 + Sorting
 + Dynamic Programming
 + Greedy
 + Divide Conquer
++ Probability and Random
 
 ## Theory Analysis
 + Theory
+  + complexity analysis
+  + NP
