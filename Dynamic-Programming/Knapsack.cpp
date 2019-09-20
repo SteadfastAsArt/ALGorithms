@@ -32,7 +32,7 @@ int KnapSack(int num_item, int C, vector<int>w, vector<int>v ){
             // if it can be placed, compare the value between pack / non-pack,
             // else inherit from the n-1 item status (non-pack that is)
             // **note that in "pack" condition, vital to go back to weight state "(n-1, c - v[n-1])"
-            K[n][c] = w[n-1] <= c ? max(K[n-1][ c - v[n-1] ] + v[n-1], K[n-1][c]) : K[n-1][c];
+            K[n][c] = w[n-1] <= c ? max(K[n-1][ c - w[n-1] ] + v[n-1], K[n-1][c]) : K[n-1][c];
         }
     }
 
