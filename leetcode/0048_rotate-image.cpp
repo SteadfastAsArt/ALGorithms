@@ -1,7 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+/*
+ * 0048 - To rotate a 2-D image 90°
+ * Intuitively recognize the loop structure and 
+ * find the primitives for it. ---Problems done.
+ */
 void rotate(vector<vector<int>>& matrix) {
     int n = matrix.size();
     for(int i = 0; i <= n / 2; i++)
