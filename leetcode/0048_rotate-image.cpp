@@ -3,8 +3,9 @@ using namespace std;
 
 /*
  * 0048 - To rotate a 2-D image 90°
+ * === ===
  * Intuitively recognize the loop structure and 
- * find the primitives for it. ---Problems done.
+ * find the primitives for it. --Done.
  */
 void rotate(vector<vector<int>>& matrix) {
     int n = matrix.size();

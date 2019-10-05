@@ -3,9 +3,10 @@ using namespace std;
 const int maxn = 1e3;
 
 /*
- * this problem can be solved in O(N)
- * two pointers
- * 
+ * 0011 - To find the maximum volume of water given the 
+ * bars diagram.
+ * === ===
+ * This problem can be solved in O(N) with two pointers.
  */
 
 int maxArea(vector<int>& height) {
@@ -29,18 +30,6 @@ int main(){
     vector<int> h(arr, arr+9);
     int res = maxArea(h);
     cout << res;
-
-
-
+    
     return 0;
 }
-
-/*
-int maxArea(vector<int> & height)
-{
-    int res = 0;
-    for (int b = 0, e = height.size()-1; b < e; )
-        res = std::max(res, (e-b) * (height[b] < height[e] ? height[b++] : height[e--]));
-    return res;
-}
-*/
