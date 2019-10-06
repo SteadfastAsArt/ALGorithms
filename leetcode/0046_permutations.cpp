@@ -7,12 +7,6 @@ using namespace std;
  * Backtracking
  */
 
-vector<vector<int> > permute(vector<int>& nums) {
-    vector<vector<int> > res;
-    dfs(nums, 0, res);
-    return res;
-}
-
 // permute: num[begin..end]
 // invariant: num[0..begin-1] have been permuted & fixed
 void dfs(vector<int> &nums, int begin, vector<vector<int> > &result)
@@ -30,3 +24,10 @@ void dfs(vector<int> &nums, int begin, vector<vector<int> > &result)
         swap(nums[begin], nums[i]);  /* reset */
     }
 }
+
+vector<vector<int> > permute(vector<int>& nums) {
+    vector<vector<int> > res;
+    dfs(nums, 0, res);
+    return res;
+}
+
